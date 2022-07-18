@@ -1,0 +1,302 @@
+    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    /*geral*/
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Inter', sans-serif;
+        width: 100vw;
+    }
+    /*cabeçario*/
+    
+    .menu-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 45px;
+        padding: 10px, 10px, 5px, 10px;
+        border-bottom: solid 1px rgb(235, 235, 235);
+        box-shadow: 1px 1px 20px -15px;
+        width: 100%;
+    }
+    
+    .cabecario {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 5px;
+        padding: 5px;
+    }
+    
+    .logo {
+        font-size: medium;
+        padding: 10px;
+        margin-left: 30px;
+    }
+    
+    .item-cabecario {
+        font-size: smaller;
+        padding-top: 9px;
+        font-style: none;
+        color: #333333;
+    }
+    
+    .item-cabecario:hover {
+        color: #828282;
+        font-weight: 500;
+    }
+    /*pagina principal*/
+    
+    .pagina {
+        /*incluso vitrine e carrinho*/
+        display: flex;
+        flex-direction: row;
+        margin: 15px;
+        margin-top: 52px;
+        margin-left: 115px;
+    }
+    /*VITRINE*/
+    
+    .linha {
+        /*UL de itens da vitrine*/
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 40px;
+    }
+    
+    .card {
+        border: solid 2px #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 22px;
+    }
+    
+    .card:hover {
+        border: solid 2px #372886;
+    }
+    
+    .card-img {
+        background-color: #f5f5f5;
+        width: 100%;
+    }
+    
+    .card-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px;
+    }
+    
+    .classification {
+        background-color: #2e245e;
+        padding: 1px;
+        color: #fff;
+        font-size: 10px;
+        font-weight: 100;
+        width: 60px;
+        height: 18px;
+        text-align: center;
+    }
+    
+    .titulo {
+        font-size: 20px;
+        font-style: none;
+        font-weight: 900;
+        color: #333333;
+    }
+    
+    .description {
+        font-size: 14px;
+        color: #828282;
+        font-weight: 200;
+    }
+    
+    .preco {
+        font-size: 16px;
+        font-weight: bold;
+        color: #372886;
+    }
+    
+    .adc-carro {
+        color: #333333;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    
+    .adc-carro:hover {
+        color: #372886;
+        font-weight: 1000;
+    }
+    /*lado esquerdo FUNCIONALIDADES*/
+    
+    .funcionalidades {
+        /*parte com carrinho e barra de pesquisa*/
+        display: flex;
+        flex-direction: column;
+        margin-left: 54px;
+        margin-right: 115px;
+        gap: 25px;
+    }
+    
+    .botao {
+        background-color: #372886;
+        padding: 10px;
+        color: #f5f5f5;
+        border: solid 1px #372886;
+    }
+    
+    .botao:hover {
+        background-color: #4430aa;
+        border: solid 1px #372886;
+        color: #fff;
+    }
+    
+    .barra-pesquisa {
+        background-color: #f5f5f5;
+        color: #828282;
+        border: none;
+        padding: 10px;
+    }
+    
+    .pesquisa {
+        /*div do input + botao de pesquisa*/
+        display: flex;
+        flex-direction: row;
+    }
+    /*mini carrinho */
+    
+    .mini-carro-comp {
+        font-size: 15px;
+        color: #f5f5f5;
+        font-weight: bold;
+        background-color: #372886;
+        padding: 15px;
+        text-align: center;
+    }
+    /*card vazio*/
+    /* .empty {
+        background-color: #f5f5f5;
+        padding-top: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+        height: 300px;
+    }
+    
+    .carro-vazio {
+        text-align: center;
+        margin-top: 90px;
+        color: #333333;
+        font-weight: bold;
+    }
+    
+    .adc-itens {
+        text-align: center;
+        color: #828282;
+        font-weight: 500;
+    } */
+    /*mini cards*/
+    
+    .mini-card-carro {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #f5f5f5;
+        padding-top: 30px;
+        padding-left: 12px;
+        padding-right: 12px;
+        height: 330px;
+        overflow-y: scroll;
+    }
+    
+    .mini-card-carro::-webkit-scrollbar {
+        width: 8px;
+        /* width of the entire scrollbar */
+    }
+    
+    .mini-card-carro::-webkit-scrollbar-track {
+        background: #f5f5f5;
+        /* color of the tracking area */
+    }
+    
+    .mini-card-carro::-webkit-scrollbar-thumb {
+        background-color: #acacac;
+        /* color of the scroll thumb */
+        border-radius: 20px;
+        /* roundness of the scroll thumb */
+        border: none;
+        /* creates padding around scroll thumb */
+    }
+    
+    .mini-card {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        border: solid 1px #f5f5f5;
+    }
+    
+    .mini-card:hover {
+        border: solid 1px #acacac;
+        border-radius: 5px;
+    }
+    /*coisas dentro do cardinho*/
+    
+    .img-mini {
+        background-color: #fff;
+        width: 50%;
+    }
+    
+    .mini-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .titulo-mini {
+        font-size: 16px;
+        font-style: none;
+        font-weight: 900;
+        color: #333333;
+    }
+    
+    .preco-mini {
+        font-size: 13px;
+        font-weight: bold;
+        color: #372886;
+    }
+    
+    .remove {
+        font-size: 12px;
+        font-style: none;
+        font-weight: 500;
+        color: #828282;
+    }
+    
+    .remove:hover {
+        color: #333333;
+    }
+    /*resultados após o cart*/
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        background-color: #333333;
+    }
+    
+    .info-linha {
+        display: flex;
+        flex-direction: row;
+        padding: 15px;
+        justify-content: space-between;
+        color: #f5f5f5;
+    }
+    
+    .quantidade {}
+    
+    .total {}
