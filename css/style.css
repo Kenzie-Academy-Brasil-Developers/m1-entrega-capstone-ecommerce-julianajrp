@@ -211,6 +211,7 @@
         padding-top: 30px;
         padding-left: 12px;
         padding-right: 12px;
+        padding-bottom: 10px;
         height: 330px;
         overflow-y: scroll;
     }
