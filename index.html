@@ -17,24 +17,24 @@
             <nav class="menu-nav">
                 <ul class="cabecario">
                     <li class="item-cabecario">Todos</li>
-                    <li class="item-cabecario">Acessorios</li>
-                    <li class="item-cabecario">Calçados</li>
-                    <li class="item-cabecario">Camisetas</li>
+                    <li class="item-cabecario" id='acessorios'>Acessórios</li>
+                    <li class="item-cabecario" id="'calcados">Calçados</li>
+                    <li class="item-cabecario" id="camisetas">Camisetas</li>
                 </ul>
             </nav>
         </div>
     </header>
     <div class='pagina'>
         <div class="vitrine">
-            <ul class='linha'>
-                <li class='card'>
+            <ul class='linha' id="linha-1">
+                <!-- <li class='card'>
                     <img src="./img/camiseta_branca.svg" alt="white t-shirt" class="card-img">
                     <main class="card-desc">
                         <h5 class="classification">Camisetas</h5>
                         <h3 class="titulo">T-Shirt</h3>
                         <h5 class="description">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</h5>
                         <strong class="preco">R$ 100,00</strong>
-                        <h5 class="adc-carro">Adicionar ao carrinho</h5>
+                        <h5 class="adc-carro" id="adc-cd1">Adicionar ao carrinho</h5>
                     </main>
                 </li>
                 <li class='card'>
@@ -44,7 +44,7 @@
                         <h2 class="titulo">T-Shirt</h2>
                         <h5 class="description">Esta t-shirt é imprescindível no seu guarda-roupa, combinando o caimento intemporal de...</h5>
                         <strong class="preco">R$ 100,00</strong>
-                        <h5 class="adc-carro">Adicionar ao carrinho</h5>
+                        <h5 class="adc-carro" id="adc-cd2">Adicionar ao carrinho</h5>
                     </main>
                 </li>
                 <li class='card'>
@@ -54,19 +54,19 @@
                         <h1 class="titulo">Black Hat</h1>
                         <h5 class="description">O gorro Next.js chegou! Esta beldade bordada tem um ajuste confortável ue garante que...</h5>
                         <strong class="preco">R$ 100,00</strong>
-                        <h5 class="adc-carro">Adicionar ao carrinho</h5>
+                        <h5 class="adc-carro" id="adc-cd3">Adicionar ao carrinho</h5>
                     </main>
-                </li>
+                </li> -->
             </ul>
-            <ul class='linha'>
-                <li class='card'>
+            <ul class='linha' id="linha-2">
+                <!-- <li class='card'>
                     <img src="./img/jaqueta.svg" alt="jaqueta" class="card-img">
                     <main class="card-desc">
                         <h5 class="classification">Camisetas</h5>
                         <h1 class="titulo">Cold Jacket</h1>
                         <h5 class="description">Adicione um pouco de energia ao seu guarda-roupa de inverno com essa jaqueta vibrante...</h5>
                         <strong class="preco">R$ 100,00</strong>
-                        <h5 class="adc-carro">Adicionar ao carrinho</h5>
+                        <h5 class="adc-carro" id="adc-cd4">Adicionar ao carrinho</h5>
                     </main>
                 </li>
                 <li class='card'>
@@ -76,7 +76,7 @@
                         <h1 class="titulo">T-Shirt</h1>
                         <h5 class="description">Esta máscara facial durável é feita de duas camadas de tecido tratado e possui presilhas...</h5>
                         <strong class="preco">R$ 100,00</strong>
-                        <h5 class="adc-carro">Adicionar ao carrinho</h5>
+                        <h5 class="adc-carro" id="adc-cd5">Adicionar ao carrinho</h5>
                     </main>
                 </li>
                 <li class='card'>
@@ -86,9 +86,9 @@
                         <h1 class="titulo">Lightweight Jacket</h1>
                         <h5 class="description">Adicione um pouco de energia ao seu guarda-roupa de inverno com essa jaqueta vibrante...</h5>
                         <strong class="preco">R$ 100,00</strong>
-                        <h5 class="adc-carro">Adicionar ao carrinho</h5>
+                        <h5 class="adc-carro" id="adc-cd6">Adicionar ao carrinho</h5>
                     </main>
-                </li>
+                </li> -->
             </ul>
         </div>
         <div class='funcionalidades'>
@@ -102,8 +102,8 @@
                     <h3 class="carro-vazio">Carrinho vazio :(</h3>
                     <h5 class="adc-itens">Adicione itens</h5>
                 </div> -->
-                <ul class="mini-card-carro">
-                    <li class="mini-card">
+                <ul class="mini-card-carro" id="mini-carro">
+                    <!-- <li class="mini-card" id="remove-cd1">
                         <img src="./img/camiseta_branca.svg" alt="white t-shirt" class="img-mini">
                         <div class="mini-desc">
                             <h3 class="titulo-mini">Titulo</h3>
@@ -111,7 +111,7 @@
                             <p class="remove">Remover produto</p>
                         </div>
                     </li>
-                    <li class="mini-card">
+                    <li class="mini-card" id="remove-cd2">
                         <img src="./img/camiseta_preta.svg" alt="black t-shirt" class="img-mini">
                         <div class="mini-desc">
                             <h3 class="titulo-mini">Titulo</h3>
@@ -119,7 +119,7 @@
                             <p class="remove">Remover produto</p>
                         </div>
                     </li>
-                    <li class="mini-card">
+                    <li class="mini-card" id="remove-cd3">
                         <img src="./img/gorro.svg" alt="gorro" class="img-mini">
                         <div class="mini-desc">
                             <h3 class="titulo-mini">Titulo</h3>
@@ -127,15 +127,15 @@
                             <p class="remove">Remover produto</p>
                         </div>
                     </li>
-                    <li class="mini-card">
+                    <li class="mini-card" id="remove-cd4">
                         <img src="./img/jaqueta.svg" alt="jaqueta" class="img-mini">
-                        <div>
+                        <div class="mini-desc">
                             <h3 class="titulo-mini">Titulo</h3>
                             <strong class="preco-mini">R$ 100,00</strong>
                             <p class="remove">Remover produto</p>
                         </div>
                     </li>
-                    <li class="mini-card">
+                    <li class="mini-card" id="remove-cd5">
                         <img src="./img/mascara.svg" alt="mask" class="img-mini">
                         <div class="mini-desc">
                             <h3 class=" titulo-mini ">Titulo</h3>
@@ -143,7 +143,7 @@
                             <p class="remove ">Remover produto</p>
                         </div>
                     </li>
-                    <li class="mini-card ">
+                    <li class="mini-card" id="remove-cd6">
                         <img src="./img/moletom.svg " alt="moletom " class="img-mini ">
                         <div class="mini-desc">
                             <h3 class="titulo-mini">Titulo</h3>
@@ -151,16 +151,16 @@
                             <p class="remove">Remover produto</p>
 
                         </div>
-                    </li>
+                    </li> -->
                 </ul>
-                <div class="info">
-                    <div class="info-linha">
+                <div class="info" id="tudo">
+                    <div class="info-linha" id="info-linha1">
                         <p class="quantidade">Quantidade</p>
-                        <p class="total">2</p>
+                        <p class="total" id="quantidadeProdutos">0</p>
                     </div>
-                    <div class="info-linha">
+                    <div class="info-linha" id="info-linha2">
                         <p class="quantidade">Total</p>
-                        <p class="total">R$ 200,00</p>
+                        <p class="total" id="precoTotal">0</p>
                     </div>
                 </div>
 
